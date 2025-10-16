@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ramesh E - Media & AI Specialist</title>
+    <!-- Font for clean, readable typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* --- BASE STYLES & RESET --- */
+        :root {
+            --color-primary: #059669; /* Emerald Green Accent */
+            --color-secondary: #047857; /* Darker Emerald */
+            --color-text-main: #333; /* Charcoal */
+            --color-text-secondary: #555;
+            --color-bg-main: #fff; /* White */
+            --color-bg-light: #f4f7f9; /* Light Gray for contrast */
+            --color-border: #eee;
+            --color-link: var(--color-primary);
+            --font-family-main: 'Inter', sans-serif;
+            --transition-speed: 0.3s;
+        }
+
+        /* Dark Mode Variables */
+        .dark-mode {
+            --color-text-main: #f0f0f0;
+            --color-text-secondary: #a0a0a0;
+            --color-bg-main: #121212;
+            --color-bg-light: #1e1e1e;
+            --color-border: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family-main);
+            line-height: 1.6;
+            color: var(--color-text-main);
+            background-color: var(--color-bg-main);
+            transition: background-color var(--transition-speed), color var(--transition-speed);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 0.5em;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-primary);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            color: var(--color-link);
+            text-decoration: none;
+            transition: color var(--transition-speed);
+        }
+
+        a:hover {
+            color: var(--color-secondary);
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition-speed);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-secondary);
+        }
+
+        .btn-pdf {
+            background-color: #f1c40f; /* Yellow for visibility */
+            color: var(--color-text-main);
+        }
+        
+        .btn-pdf:hover {
+            background-color: #e0b808;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366; /* WhatsApp Green */
+            color: white;
+            margin-left: 15px;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        /* --- NAVBAR --- */
+        #navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--color-bg-main);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+        }
+
+        #navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            color: var(--color-text-main);
+            padding: 5px 0;
+        }
+
+        #dark-mode-toggle {
+            background: none;
+            color: var(--color-text-main);
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color var(--transition-speed);
+        }
+
+        /* --- HEADER / HERO --- */
+        #hero {
+            padding: 80px 0 40px;
+            text-align: center;
+            background-color: var(--color-bg-light);
+        }
+
+        .name {
+            font-size: 3rem;
+            color: var(--color-primary);
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--color-text-secondary);
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info span, .contact-info a {
+            display: flex;
+            align-items: center;
+            color: var(--color-text-secondary);
+        }
+
+        .contact-info i {
+            margin-right: 5px;
+            color: var(--color-primary);
+        }
+
+        /* --- SECTIONS --- */
+        .section {
+            padding: 60px 0;
+            transition: background-color var(--transition-speed);
+        }
+
+        .bg-light {
+            background-color: var(--color-bg-light);
+        }
+
+        /* --- SUMMARY --- */
+        #summary p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left; /* Alignment change */
+        }
+
+        /* --- SKILLS --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            padding: 20px;
+            background-color: var(--color-bg-main);
+            border: 1px solid var(--color-primary); /* Subtle border change */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: background-color var(--transition-speed), border-color var(--transition-speed);
+        }
+        
+        /* Ensure skill lists use bullets and indent */
+        .skill-category ul {
+            list-style: disc;
+            padding-left: 20px; 
+        }
+
+        .skill-category h3 {
+            color: var(--color-primary);
+            font-size: 1.15rem;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .skill-category li {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            color: var(--color-text-secondary);
+        }
+
+        /* --- EXPERIENCE (TIMELINE) --- */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            margin-left: 20px;
+            border-left: 2px solid var(--color-border);
+        }
+        
+        /* Ensures timeline markers have proper background in dark mode */
+        .dark-mode .timeline {
+            border-left: 2px solid var(--color-border);
+        }
+
+        .timeline-item {
+            padding-left: 40px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            border: 3px solid var(--color-bg-main);
+            transition: background-color var(--transition-speed);
+        }
+        
+        .dark-mode .timeline-item::before {
+            border-color: var(--color-bg-light); /* Use a darker background color for the ring */
+        }
+
+
+        .timeline-date {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            color: var(--color-text-main);
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-style: italic;
+            color: var(--color-text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .timeline-item ul {
+            list-style: disc;
+            padding-left: 20px;
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+        }
+
+        .timeline-item li {
+            margin-bottom: 5px;
+        }
+
+        /* --- EDUCATION & CREDENTIALS --- */
+        .education-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid var(--color-border); /* Subtle border change */
+            border-left: 3px solid var(--color-primary);
+            background-color: var(--color-bg-main);
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+        }
+        
+        .dark-mode .education-item {
+            background-color: #1a1a1a;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .institution {
+            font-style: italic;
+            margin-bottom: 8px;
+            color: var(--color-text-secondary);
+        }
+
+        .thesis {
+            font-size: 0.95rem;
+        }
+
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        #credentials ul {
+            padding-left: 20px;
+            list-style: disc;
+            color: var(--color-text-secondary);
+        }
+
+        #credentials li {
+            margin-bottom: 10px;
+        }
+
+        /* --- AI THOUGHT LEADERSHIP & PUBLICATIONS --- */
+        .leadership-list {
+            padding-left: 20px;
+            list-style: disc;
+            margin-bottom: 40px;
+            color: var(--color-text-secondary);
+        }
+
+        .leadership-list li {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .article-list {
+            list-style: none;
+            column-count: 2; /* Two columns for a denser, editorial look */
+            gap: 30px;
+        }
+
+        .article-list li {
+            margin-bottom: 10px;
+            line-height: 1.4;
+            break-inside: avoid;
+        }
+        
+        .article-list a {
+            display: block; /* Make the whole list item clickable */
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        .article-list a:hover {
+            background-color: rgba(5, 150, 105, 0.1); /* Emerald hover effect */
+            color: var(--color-secondary);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--color-text-main);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .dark-mode footer {
+            background-color: black;
+        }
+
+        /* --- MEDIA QUERIES (RESPONSIVENESS) --- */
+        @media (max-width: 900px) {
+            .article-list {
+                column-count: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links a:not(.btn-pdf), #dark-mode-toggle {
+                display: none; /* Hide secondary links on small screens to save space */
+            }
+            .nav-links {
+                gap: 10px;
+            }
+            #navbar .container {
+                padding: 10px 20px;
+            }
+            .logo {
+                font-size: 1.2rem;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .btn-whatsapp {
+                margin-left: 0;
+            }
+            .timeline {
+                margin-left: 0;
+                border-left: 3px solid var(--color-border);
+                padding-left: 20px;
+            }
+            .timeline-item {
+                padding-left: 0;
+                border-left: none;
+            }
+            .timeline-item::before {
+                left: -19px;
+            }
+            .dark-mode .timeline-item::before {
+                border-color: #1a1a1a;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .name {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .title {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav id="navbar">
+        <div class="container">
+            <h1 class="logo">Dr. Ramesh E</h1>
+            <div class="nav-links">
+                <a href="#summary">Summary</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#thought-leadership">Publications</a>
+                <button id="dark-mode-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <!-- This button is a placeholder; you should host your PDF and update the href attribute -->
+                <a href="#" class="btn btn-pdf" download="Dr_Ramesh_E_Resume.pdf" title="Download Resume PDF">
+                    <i class="fas fa-download"></i> PDF
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content-wrap">
+        <!-- HEADER SECTION -->
+        <header id="hero" class="section">
+            <div class="container">
+                <hgroup>
+                    <h1 class="name">Dr. Ramesh E</h1>
+                    <p class="title">Media & AI Specialist | Localization Leader | Digital Marketing & Communication Strategist | Linguist & Cultural Scholar (PhD)</p>
+                </hgroup>
+                <div class="contact-info">
+                    <span class="location"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</span>
+                    <a href="tel:+919731373752" class="phone"><i class="fas fa-phone"></i> 9731373752</a>
+                    <a href="mailto:techtalkinkannada@gmail.com" class="email"><i class="fas fa-envelope"></i> techtalkinkannada@gmail.com</a>
+                    <a href="https://linkedin.com/in/drrameshe" target="_blank" class="link" title="LinkedIn Profile"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.abhinavaai.tech" target="_blank" class="link" title="Personal Website"><i class="fas fa-globe"></i> abhinavaai.tech</a>
+                    <a href="https://wa.me/919731373752" target="_blank" class="btn btn-whatsapp" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- PROFESSIONAL SUMMARY SECTION -->
+        <section id="summary" class="section">
+            <div class="container">
+                <h2>Professional Summary</h2>
+                <p>
+                    With nearly two decades of experience spanning broadcast, print, and digital media, I bring a rare blend of editorial vision, linguistic expertise, and AI fluency. Beginning my career at TV9 Kannada and advancing through major media houses and global localization programs, I have built deep expertise in journalism, digital transformation, and AI-assisted content strategy. Backed by a PhD in Cultural Studies, I combine cultural insight with technological innovation—advancing Kannada media that is contextually rich, digitally intelligent, and audience-focused.
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS & EXPERTISE SECTION -->
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2>Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Editorial & Newsroom Leadership</h3>
+                        <ul>
+                            <li>Editorial judgment & news sense</li>
+                            <li>Newsroom management & story planning</li>
+                            <li>Multimedia storytelling</li>
+                            <li>Content Writing</li>
+                            <li>SEO writing & digital publishing</li>
+                            <li>Audience engagement & analytics</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI Tools & Emerging Technologies</h3>
+                        <ul>
+                            <li>Tools: GPT 5, Gemini Pro, Claude, Perplexity, Meta AI, Grok, Gamma, Napkin AI, Notion AI</li>
+                            <li>AI-assisted content creation, summarization & planning</li>
+                            <li>Prompt engineering & AI evaluation</li>
+                            <li>Workflow automation</li>
+                            <li>Ethical AI alignment & editorial applications</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Localization & Linguistic Expertise</h3>
+                        <ul>
+                            <li>Translation review & QA</li>
+                            <li>Localization strategy & terminology management</li>
+                            <li>Transcreation</li>
+                            <li>CAT Tools: Trados Studio, ATMS, Smartling, XTM Cloud, Google & Facebook in-house tools</li>
+                            <li>Cultural adaptation for local content & audiences</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Digital Media, Design & Production Tools</h3>
+                        <ul>
+                            <li>Tools: Canva, Adobe Premiere Pro, Adobe InDesign, CapCut, Photoshop, Power BI, Microsoft Office, Google Workspace</li>
+                            <li>Video scripting & editing</li>
+                            <li>Quip (project management)</li>
+                            <li>Jira (issue tracking)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL EXPERIENCE SECTION -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 2023 – Present</div>
+                        <h3 class="job-title">Division Manager (Remote)</h3>
+                        <p class="company">Productive Playhouse, USA</p>
+                        <ul>
+                            <li>Manage a distributed team of translators, reviewers, and team leads for Kannada-language video content.</li>
+                            <li>Oversee end-to-end localization, including translation, review, QA, and timely delivery.</li>
+                            <li>Lead recruitment, vendor management, training, and performance reviews for the Project.</li>
+                            <li>Manage invoicing, client communication, and daily operations to ensure seamless project execution.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Nov 2024 – Present</div>
+                        <h3 class="job-title">Freelance Linguistic Consultant & AI Trainer</h3>
+                        <p class="company">Alignerr, RWS, Turing, Invisible Technologies & Meta</p>
+                        <ul>
+                            <li>Provide AI model training, prompt engineering, data annotation, and linguistic evaluation on a freelance basis.</li>
+                            <li>Deliver Kannada–English translations, cultural localization, and content moderation for global AI projects.</li>
+                            <li>Collaborate with Amazon Luxembourg as a freelance reviewer for UI localization and content accuracy.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun 2021 – Nov 2023</div>
+                        <h3 class="job-title">Senior Linguist & Kannada Lead</h3>
+                        <p class="company">Magnon Group (Amazon), India</p>
+                        <ul>
+                            <li>Led Kannada localization for Amazon’s e-commerce platform, managing translation, review, and audits.</li>
+                            <li>Provided live linguistic support to operations teams during major sale events (e.g., Great Indian Festival, Prime Day, etc.).</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mar 2012 – Jun 2021</div>
+                        <h3 class="job-title">Principal Digital Content Producer</h3>
+                        <p class="company">Vijaya Karnataka (Times of India Group)</p>
+                        <ul>
+                            <li>Produced digital content for VijayaKarnataka.com, covering writing, translation, SEO optimization, and social media engagement.</li>
+                            <li>Created high-performing video content for web teams, garnering millions of views and enhancing digital reach.</li>
+                            <li>Led the district edition, managing end-to-end editorial workflows and page design via Adobe InDesign.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dec 2008 – Feb 2011</div>
+                        <h3 class="job-title">Bulletin Producer</h3>
+                        <p class="company">Samaya TV</p>
+                        <ul>
+                            <li>Managed a news bulletin, handling breaking news and live newsroom analysis.</li>
+                            <li>Oversaw bulletin planning, scripting, and visual layout, maintaining accuracy and timeliness.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun 2006 – Sep 2007</div>
+                        <h3 class="job-title">District Correspondent (Kolar)</h3>
+                        <p class="company">TV9 Kannada</p>
+                        <ul>
+                            <li>Reported impactful stories including the KGF mining controversy, illegal gambling networks, and Beedi dance exposés.</li>
+                            <li>Produced special programs, interviews, and political debates during election coverage.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2007 – 2013</div>
+                        <h3 class="job-title">Part-Time Lecturer (Kannada)</h3>
+                        <p class="company">Government First Grade College, Karnataka</p>
+                        <ul>
+                            <li>Taught Kannada language and literature to undergraduate students.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section bg-light">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>PhD in Kannada (Cultural Studies)</h3>
+                    <p class="institution">Kannada University, Hampi (2012 – 2020)</p>
+                    <p class="thesis">Dissertation: “An Examination of Kannada Intellectual Discourses in the Post-Colonial Period.”</p>
+                </div>
+                <div class="education-item">
+                    <h3>MPhil in Kannada</h3>
+                    <p class="institution">Kannada University, Hampi (2008)</p>
+                    <p class="thesis">Dissertation: “A Study of Modernity in the Novels of Poornachandra Tejaswi.”</p>
+                </div>
+                <div class="education-item">
+                    <h3>MA in Kannada</h3>
+                    <p class="institution">Bangalore University (2003 – 2005)</p>
+                    <p class="thesis">Specialized in Linguistics, Literature, and Folklore.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS & LANGUAGES SECTION -->
+        <section id="credentials" class="section">
+            <div class="container">
+                <div class="credentials-grid">
+                    <div>
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Certificate Course in Digital Marketing – NSDL (94%)</li>
+                            <li>Google Prompting Essentials – Google (100%)</li>
+                            <li>Understanding Agentic AI – The Digital Workforce</li>
+                            <li>Linguistic Prompt Design Training – RWS</li>
+                            <li>Amazon Certifications (QA E-learning, Translator Program, Character Encoding)</li>
+                            <li>State Eligibility Test (KSET) for Lecturer – Mysore University</li>
+                            <li>Elements of AI – University of Helsinki (In Progress)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>Kannada: Native; expert in journalism, translation & editorial writing</li>
+                            <li>English: Professional working proficiency; localization & academic communication</li>
+                            <li>Hindi: Intermediate communication & comprehension</li>
+                            <li>Bilingual Localization: Extensive English–Kannada translation & cultural adaptation experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI THOUGHT LEADERSHIP & PUBLICATIONS SECTION -->
+        <section id="thought-leadership" class="section bg-light">
+            <div class="container">
+                <h2>AI Thought Leadership & Publications</h2>
+                <div class="leadership-content">
+                    <ul class="leadership-list">
+                        <li>Weekly AI Columnist for <i>Vijaya Karnataka</i> (since January 2025).</li>
+                        <li>Author of a forthcoming book on AI and its influence on human society.</li>
+                        <li>Published Chapter: My article “AI ಎಂಬ ಮನುಕುಲದ ಮಂತ್ರದಂಡ” was published as a chapter in a BCA textbook by Bangalore University.</li>
+                        <li>Platform Creator: Creator and Managing Editor of <a href="https://www.abhinavaai.tech" target="_blank">www.abhinavaai.tech</a>, a knowledge platform that simplifies AI concepts for Kannada readers.</li>
+                        <li>Guest Lecturer and invited speaker on AI, Cyber Security, and future career pathways.</li>
+                    </ul>
+
+                    <h3>Featured Articles (Weekly Column)</h3>
+                    <ul class="article-list">
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ವಾಟ್ಸ್‌ಆ್ಯಪ್‌ನಲ್ಲಿ ಇಲ್ಲದ ಫೀಚರ್‌ ಅರಟ್ಟೈನಲ್ಲಿ ಏನಿದೆ?</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ರೋಬಾಟ್‌ಗೆ ಕ್ಯಾಬಿನೆಟ್‌ ಮಿನಿಸ್ಟರ್‌ ಪಟ್ಟ</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ಎಐ ಜೊತೆ ಮಾತನಾಡಿ, ಕನ್ನಡದಲ್ಲೇ...</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">AI ಮಾಯೆ, ಒಂದೇ ದಿನ 101 ಬಿಲಿಡನ್‌ ಡಾಲರ್‌ ಆದಾಯ, ಜಗತ್ತಿನ ಅತಿ ಶ್ರೀಮಂತನಾದ ಒರಾಕಲ್ ಸಿಇಒ ಲ್ಯಾರಿ ಎಲಿಸನ್!</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ಎಐ ತಂತ್ರಜ್ಞಾನದ ಬಗ್ಗೆ ನಿಮಗೆಷ್ಟು ಗೊತ್ತು, ಕ್ವಿಜ್‌ನಲ್ಲಿ ಭಾಗವಹಿಸಿ ಜ್ಞಾನ ಪರೀಕ್ಷಿಸಿ</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ಕಾಮೆಟ್‌ ಕೇವಲ ಬ್ರೌಸರ್‌ ಅಲ್ಲ, ನಿಮ್ಮ ಏಜೆಂಟ್‌!</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ಕೇಳಿದ್ದನ್ನು ಕಲಿಸುವ ಮನುಕುಲದ ಮಹಾಗುರು AI ಗೆ ನಮನ</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ಇದು ಸ್ಮಾರ್ಟ್‌ ಸಿಟಿಯಲ್ಲ, ಎಐ ನಿಯಂತ್ರಿಸುವ ಸಿಂಬಿಯಾಟಿಕ್‌ ಸಿಟಿ</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ಶೀಘ್ರದಲ್ಲೇ ಮನುಷ್ಯನ ಮೀರಿಸುವ 'ಎಜಿಐ' ಬರಲಿದೆ: ವಿಜ್ಞಾನಿ ಪ್ರೊ.ಎಸ್‌.ಎಸ್‌ ಅಯ್ಯಂಗಾರ್‌ ಭವಿಷ್ಯ</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ವೋಗ್, ಎಐ ಮತ್ತು ಸೌಂದರ್ಯ</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">AI ನಿಂದ 18 ಸಾವಿರ ಉದ್ಯೋಗಿಗಳು ಮನೆಗೆ; ಮುಂದಿದೆ ಮಾರಿ ಹಬ್ಬ</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">ಎಂದೂ ಬೇಸರಗೊಳ್ಳದ, ದಿನವೂ ನಿಮಗಾಗಿ ಕಾಯುವ ಗರ್ಲ್‌ಫ್ರೆಂಡ್‌ ಬೇಕೇ?</a></li>
+                        <li><a href="https://www.abhinavaai.tech/" target="_blank">GenAI ಎಂದರೆ ನಿಮ್ಮ ಕೈಯ್ಯಲ್ಲಿರುವ ಮಂತ್ರ ದಂಡ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- End content-wrap -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Dr. Ramesh E. All rights reserved.</p>
+            <p>Email: techtalkinkannada@gmail.com | Phone: 9731373752</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Dark Mode Toggle ---
+            const toggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            // Check for saved user preference
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                body.classList.add('dark-mode');
+                toggle.innerHTML = '<i class="fas fa-sun"></i>'; // Change icon to sun
+            }
+
+            toggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+
+                if (body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                    toggle.innerHTML = '<i class="fas fa-sun"></i>';
+                } else {
+                    localStorage.setItem('darkMode', 'disabled');
+                    toggle.innerHTML = '<i class="fas fa-moon"></i>';
+                }
+            });
+
+            // --- Footer Year ---
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // --- Scroll Animations (Subtle Fade-in effect) ---
+            const sections = document.querySelectorAll('.section');
+
+            const observerOptions = {
+                root: null,
+                threshold: 0.1, // Start fade-in when 10% of the section is visible
+                rootMargin: "0px"
+            };
+
+            // Apply initial opacity to all sections for fade-in effect
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            });
+
+            // Intersection Observer to trigger the fade-in
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
