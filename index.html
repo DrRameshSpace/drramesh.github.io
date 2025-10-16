@@ -12,13 +12,13 @@
     <style>
         /* --- BASE STYLES & RESET --- */
         :root {
-            --color-primary: #059669; /* Emerald Green Accent */
+            --color-primary: #059669; /* Emerald Green (Requested) */
             --color-secondary: #047857; /* Darker Emerald */
-            --color-text-main: #333; /* Charcoal */
+            --color-text-main: #222; /* Near Black/Charcoal */
             --color-text-secondary: #555;
             --color-bg-main: #fff; /* White */
-            --color-bg-light: #f4f7f9; /* Light Gray for contrast */
-            --color-border: #eee;
+            --color-bg-light: #f9f9f9; /* Off-White for contrast */
+            --color-border: #ddd;
             --color-link: var(--color-primary);
             --font-family-main: 'Inter', sans-serif;
             --transition-speed: 0.3s;
@@ -31,6 +31,7 @@
             --color-bg-main: #121212;
             --color-bg-light: #1e1e1e;
             --color-border: #333;
+            --color-primary: #34d399; /* Lighter Emerald for dark mode accent */
         }
 
         * {
@@ -60,8 +61,8 @@
         }
 
         h2 {
-            font-size: 2.2rem;
-            color: var(--color-primary);
+            font-size: 2.0rem;
+            color: var(--color-primary); /* Primary color for header */
             border-bottom: 2px solid var(--color-primary);
             display: inline-block;
             padding-bottom: 5px;
@@ -86,7 +87,7 @@
             list-style: none;
         }
 
-        /* --- BUTTONS --- */
+        /* --- BUTTONS & LINKS --- */
         .btn {
             display: inline-block;
             padding: 8px 15px;
@@ -96,24 +97,17 @@
             cursor: pointer;
             transition: all var(--transition-speed);
             border: none;
-        }
-
-        .btn-primary {
-            background-color: var(--color-primary);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--color-secondary);
+            font-size: 0.9rem;
         }
 
         .btn-pdf {
-            background-color: #f1c40f; /* Yellow for visibility */
-            color: var(--color-text-main);
+            background-color: var(--color-primary); 
+            color: white;
+            margin-left: 10px;
         }
         
         .btn-pdf:hover {
-            background-color: #e0b808;
+            background-color: var(--color-secondary);
         }
 
         .btn-whatsapp {
@@ -125,77 +119,85 @@
         .btn-whatsapp:hover {
             background-color: #128C7E;
         }
-
+        
         /* --- NAVBAR --- */
         #navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background-color: var(--color-bg-main);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+            background-color: var(--color-primary); /* Primary color background */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         #navbar .container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            padding: 15px 20px;
-        }
-
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--color-primary);
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 15px;
+            padding: 12px 20px;
         }
 
         .nav-links a {
-            font-weight: 600;
-            color: var(--color-text-main);
+            margin: 0 15px;
+            font-weight: 400;
+            color: white;
             padding: 5px 0;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .nav-links a:hover {
+            border-bottom: 2px solid white;
+            color: white;
         }
 
         #dark-mode-toggle {
             background: none;
-            color: var(--color-text-main);
+            color: white;
             border: none;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            margin-left: 20px;
             cursor: pointer;
             transition: color var(--transition-speed);
         }
-
+        
+        .dark-mode #navbar {
+             background-color: #000;
+        }
+        
+        .dark-mode .nav-links a, .dark-mode #dark-mode-toggle {
+            color: var(--color-primary); /* Use light accent in dark mode nav */
+        }
+        
         /* --- HEADER / HERO --- */
         #hero {
-            padding: 80px 0 40px;
+            padding: 40px 0;
             text-align: center;
             background-color: var(--color-bg-light);
+            border-bottom: 5px solid var(--color-primary);
         }
 
         .name {
-            font-size: 3rem;
-            color: var(--color-primary);
+            font-size: 2.8rem;
+            color: var(--color-text-main);
             margin-bottom: 5px;
         }
 
         .title {
-            font-size: 1.25rem;
-            font-weight: 400;
-            color: var(--color-text-secondary);
-            margin-bottom: 30px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 25px;
+            /* Allow line break after '|' to prevent horizontal cutoff */
+            white-space: pre-wrap;
         }
 
         .contact-info {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
-            font-size: 0.95rem;
+            gap: 15px 30px;
+            font-size: 0.9rem;
         }
 
         .contact-info span, .contact-info a {
@@ -222,44 +224,56 @@
         /* --- SUMMARY --- */
         #summary p {
             font-size: 1.1rem;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            text-align: left; /* Alignment change */
+            text-align: left; 
         }
 
         /* --- SKILLS --- */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
         }
 
         .skill-category {
             padding: 20px;
             background-color: var(--color-bg-main);
-            border: 1px solid var(--color-primary); /* Subtle border change */
+            /* Card Style */
+            border: 1px solid var(--color-border); 
+            border-left: 6px solid var(--color-primary); 
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: background-color var(--transition-speed), border-color var(--transition-speed);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow */
+            margin-bottom: 10px; 
+            background-color: var(--color-bg-light); /* Lighter background for the card */
+        }
+        
+        .dark-mode .skill-category {
+            background-color: #1a1a1a;
+            border: 1px solid var(--color-border);
+            border-left: 6px solid var(--color-primary);
+        }
+
+        .skill-category h3 {
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            border-bottom: none; 
+            display: block; 
         }
         
         /* Ensure skill lists use bullets and indent */
         .skill-category ul {
             list-style: disc;
             padding-left: 20px; 
+            margin-top: 10px;
         }
 
-        .skill-category h3 {
-            color: var(--color-primary);
-            font-size: 1.15rem;
-            border-bottom: 1px solid var(--color-border);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
 
         .skill-category li {
-            font-size: 0.95rem;
-            margin-bottom: 8px;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
             color: var(--color-text-secondary);
         }
 
@@ -267,28 +281,22 @@
         .timeline {
             position: relative;
             padding: 20px 0;
-            margin-left: 20px;
-            border-left: 2px solid var(--color-border);
         }
         
-        /* Ensures timeline markers have proper background in dark mode */
-        .dark-mode .timeline {
-            border-left: 2px solid var(--color-border);
-        }
-
         .timeline-item {
-            padding-left: 40px;
-            margin-bottom: 40px;
+            padding: 15px 0 15px 25px;
+            margin-bottom: 20px;
             position: relative;
+            border-left: 2px solid var(--color-border);
         }
 
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -10px;
-            top: 5px;
-            width: 18px;
-            height: 18px;
+            left: -8px;
+            top: 18px;
+            width: 14px;
+            height: 14px;
             background-color: var(--color-primary);
             border-radius: 50%;
             border: 3px solid var(--color-bg-main);
@@ -296,33 +304,35 @@
         }
         
         .dark-mode .timeline-item::before {
-            border-color: var(--color-bg-light); /* Use a darker background color for the ring */
+            border-color: var(--color-bg-main); 
         }
 
 
         .timeline-date {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 600;
             color: var(--color-primary);
             margin-bottom: 5px;
+            display: block;
         }
 
         .job-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--color-text-main);
-            margin-bottom: 5px;
+            margin-bottom: 2px;
         }
 
         .company {
             font-style: italic;
             color: var(--color-text-secondary);
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
         }
 
         .timeline-item ul {
             list-style: disc;
             padding-left: 20px;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: var(--color-text-secondary);
         }
 
@@ -332,28 +342,30 @@
 
         /* --- EDUCATION & CREDENTIALS --- */
         .education-item {
-            margin-bottom: 30px;
-            padding: 20px;
-            border: 1px solid var(--color-border); /* Subtle border change */
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid var(--color-border); 
             border-left: 3px solid var(--color-primary);
             background-color: var(--color-bg-main);
             border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
         }
         
         .dark-mode .education-item {
             background-color: #1a1a1a;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         }
 
         .institution {
             font-style: italic;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             color: var(--color-text-secondary);
+            font-size: 0.95rem;
         }
 
         .thesis {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
         }
 
         .credentials-grid {
@@ -362,50 +374,84 @@
             gap: 40px;
         }
 
+        #credentials h2 {
+            /* Ensure H2 in credentials section has the underline */
+            border-bottom: 2px solid var(--color-primary);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+
         #credentials ul {
             padding-left: 20px;
             list-style: disc;
             color: var(--color-text-secondary);
+            font-size: 0.95rem;
         }
 
         #credentials li {
             margin-bottom: 10px;
         }
-
+        
         /* --- AI THOUGHT LEADERSHIP & PUBLICATIONS --- */
+        .leadership-content {
+            padding: 20px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            background-color: var(--color-bg-main);
+        }
+        
+        .dark-mode .leadership-content {
+            background-color: #1a1a1a;
+        }
+        
         .leadership-list {
             padding-left: 20px;
             list-style: disc;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             color: var(--color-text-secondary);
+            font-size: 0.95rem;
         }
 
         .leadership-list li {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             line-height: 1.5;
         }
 
         .article-list {
             list-style: none;
             column-count: 2; /* Two columns for a denser, editorial look */
-            gap: 30px;
+            gap: 20px;
+            font-size: 0.9rem;
         }
 
         .article-list li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             line-height: 1.4;
             break-inside: avoid;
         }
         
         .article-list a {
-            display: block; /* Make the whole list item clickable */
+            display: block; 
             padding: 5px;
             border-radius: 4px;
+            /* Make article links use the primary Emerald Green color */
+            color: var(--color-primary); 
         }
 
         .article-list a:hover {
-            background-color: rgba(5, 150, 105, 0.1); /* Emerald hover effect */
+            background-color: rgba(5, 150, 105, 0.1); 
             color: var(--color-secondary);
+        }
+        
+        /* Custom style for Featured Articles (Weekly Column) to match H2 */
+        #thought-leadership h3 {
+            font-size: 2.0rem; /* Match H2 size */
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-primary);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
         }
 
         /* --- FOOTER --- */
@@ -422,20 +468,32 @@
         }
 
         /* --- MEDIA QUERIES (RESPONSIVENESS) --- */
+        @media (max-width: 1000px) {
+            .nav-links a:not(.btn-pdf), #dark-mode-toggle {
+                margin: 0 8px;
+            }
+        }
+        
         @media (max-width: 900px) {
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
             .article-list {
                 column-count: 1;
             }
         }
 
         @media (max-width: 768px) {
-            .nav-links a:not(.btn-pdf), #dark-mode-toggle {
-                display: none; /* Hide secondary links on small screens to save space */
+            .nav-links a:not(.btn-pdf) {
+                display: none; /* Hide most links on small screens */
             }
             .nav-links {
                 gap: 10px;
+                justify-content: flex-end;
+                width: 100%;
             }
             #navbar .container {
+                justify-content: space-between;
                 padding: 10px 20px;
             }
             .logo {
@@ -449,32 +507,39 @@
             .btn-whatsapp {
                 margin-left: 0;
             }
-            .timeline {
-                margin-left: 0;
-                border-left: 3px solid var(--color-border);
-                padding-left: 20px;
-            }
+            
             .timeline-item {
-                padding-left: 0;
-                border-left: none;
+                padding-left: 15px;
+                margin-left: 0;
+                border-left: 2px solid var(--color-border);
             }
-            .timeline-item::before {
-                left: -19px;
+             .timeline-item::before {
+                left: -2px; 
+                top: 18px;
             }
-            .dark-mode .timeline-item::before {
-                border-color: #1a1a1a;
+             .timeline-date {
+                font-size: 0.75rem;
+            }
+            
+            .credentials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            #thought-leadership h3 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
             }
         }
 
         @media (max-width: 480px) {
             .name {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.8rem;
+                font-size: 2.2rem;
             }
             .title {
                 font-size: 1rem;
+            }
+            .skill-category {
+                padding: 15px;
             }
         }
     </style>
@@ -484,7 +549,7 @@
     <!-- Sticky Navigation Bar -->
     <nav id="navbar">
         <div class="container">
-            <h1 class="logo">Dr. Ramesh E</h1>
+            <!-- Logo removed as per design, keeping only nav links -->
             <div class="nav-links">
                 <a href="#summary">Summary</a>
                 <a href="#skills">Skills</a>
@@ -494,7 +559,7 @@
                 <button id="dark-mode-toggle" title="Toggle Dark Mode">
                     <i class="fas fa-moon"></i>
                 </button>
-                <!-- This button is a placeholder; you should host your PDF and update the href attribute -->
+                <!-- PDF button -->
                 <a href="#" class="btn btn-pdf" download="Dr_Ramesh_E_Resume.pdf" title="Download Resume PDF">
                     <i class="fas fa-download"></i> PDF
                 </a>
@@ -508,14 +573,14 @@
             <div class="container">
                 <hgroup>
                     <h1 class="name">Dr. Ramesh E</h1>
-                    <p class="title">Media & AI Specialist | Localization Leader | Digital Marketing & Communication Strategist | Linguist & Cultural Scholar (PhD)</p>
+                    <p class="title">Media & AI Specialist | Localization Leader | Digital Marketing & Communication Strategist |<br>Linguist & Cultural Scholar (PhD)</p>
                 </hgroup>
                 <div class="contact-info">
                     <span class="location"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</span>
                     <a href="tel:+919731373752" class="phone"><i class="fas fa-phone"></i> 9731373752</a>
                     <a href="mailto:techtalkinkannada@gmail.com" class="email"><i class="fas fa-envelope"></i> techtalkinkannada@gmail.com</a>
-                    <a href="https://linkedin.com/in/drrameshe" target="_blank" class="link" title="LinkedIn Profile"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://www.abhinavaai.tech" target="_blank" class="link" title="Personal Website"><i class="fas fa-globe"></i> abhinavaai.tech</a>
+                    <a href="https://linkedin.com/in/drrameshe" target="_blank" class="link" title="LinkedIn Profile"><i class="fab fa-linkedin"></i> linkedin.com/in/drrameshe</a>
+                    <a href="https://www.abhinavaai.tech" target="_blank" class="link" title="Personal Website"><i class="fas fa-globe"></i> www.abhinavaai.tech</a>
                     <a href="https://wa.me/919731373752" target="_blank" class="btn btn-whatsapp" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
@@ -544,13 +609,14 @@
                             <li>Multimedia storytelling</li>
                             <li>Content Writing</li>
                             <li>SEO writing & digital publishing</li>
+                            <li>HTML</li>
                             <li>Audience engagement & analytics</li>
                         </ul>
                     </div>
                     <div class="skill-category">
                         <h3>AI Tools & Emerging Technologies</h3>
                         <ul>
-                            <li>Tools: GPT 5, Gemini Pro, Claude, Perplexity, Meta AI, Grok, Gamma, Napkin AI, Notion AI</li>
+                            <li>GPT 5, Gemini Pro, Claude, Perplexity, Meta AI, Grok, Gamma, Napkin AI, Notion AI</li>
                             <li>AI-assisted content creation, summarization & planning</li>
                             <li>Prompt engineering & AI evaluation</li>
                             <li>Workflow automation</li>
@@ -570,7 +636,7 @@
                     <div class="skill-category">
                         <h3>Digital Media, Design & Production Tools</h3>
                         <ul>
-                            <li>Tools: Canva, Adobe Premiere Pro, Adobe InDesign, CapCut, Photoshop, Power BI, Microsoft Office, Google Workspace</li>
+                            <li>Canva, Adobe Premiere Pro, Adobe InDesign, CapCut, Photoshop, Power BI, Microsoft Office, Google Workspace</li>
                             <li>Video scripting & editing</li>
                             <li>Quip (project management)</li>
                             <li>Jira (issue tracking)</li>
@@ -587,19 +653,20 @@
                 <div class="timeline">
 
                     <div class="timeline-item">
-                        <div class="timeline-date">Sep 2023 – Present</div>
+                        <span class="timeline-date">Sep 2023 – Present</span>
                         <h3 class="job-title">Division Manager (Remote)</h3>
                         <p class="company">Productive Playhouse, USA</p>
                         <ul>
                             <li>Manage a distributed team of translators, reviewers, and team leads for Kannada-language video content.</li>
                             <li>Oversee end-to-end localization, including translation, review, QA, and timely delivery.</li>
+                            <li>Collaborate with U.S.-based teams to support internal decision-making through accurate language delivery.</li>
                             <li>Lead recruitment, vendor management, training, and performance reviews for the Project.</li>
                             <li>Manage invoicing, client communication, and daily operations to ensure seamless project execution.</li>
                         </ul>
                     </div>
 
                     <div class="timeline-item">
-                        <div class="timeline-date">Nov 2024 – Present</div>
+                        <span class="timeline-date">Nov 2024 – Present</span>
                         <h3 class="job-title">Freelance Linguistic Consultant & AI Trainer</h3>
                         <p class="company">Alignerr, RWS, Turing, Invisible Technologies & Meta</p>
                         <ul>
@@ -610,52 +677,78 @@
                     </div>
 
                     <div class="timeline-item">
-                        <div class="timeline-date">Jun 2021 – Nov 2023</div>
+                        <span class="timeline-date">Jun 2021 – Nov 2023</span>
                         <h3 class="job-title">Senior Linguist & Kannada Lead</h3>
                         <p class="company">Magnon Group (Amazon), India</p>
                         <ul>
                             <li>Led Kannada localization for Amazon’s e-commerce platform, managing translation, review, and audits.</li>
+                            <li>Collaborated with cross-functional teams to resolve UI and language issues, ensuring consistency and accuracy.</li>
                             <li>Provided live linguistic support to operations teams during major sale events (e.g., Great Indian Festival, Prime Day, etc.).</li>
                         </ul>
                     </div>
 
                     <div class="timeline-item">
-                        <div class="timeline-date">Mar 2012 – Jun 2021</div>
+                        <span class="timeline-date">Mar 2012 – Jun 2021</span>
                         <h3 class="job-title">Principal Digital Content Producer</h3>
                         <p class="company">Vijaya Karnataka (Times of India Group)</p>
                         <ul>
                             <li>Produced digital content for VijayaKarnataka.com, covering writing, translation, SEO optimization, and social media engagement.</li>
-                            <li>Created high-performing video content for web teams, garnering millions of views and enhancing digital reach.</li>
                             <li>Led the district edition, managing end-to-end editorial workflows and page design via Adobe InDesign.</li>
+                            <li>Supervised and coordinated reporters, designers, marketing, and distribution teams for editorial and brand objectives.</li>
+                            <li>Created high-performing video content for web teams, garnering millions of views and enhancing digital reach.</li>
                         </ul>
                     </div>
                     
                     <div class="timeline-item">
-                        <div class="timeline-date">Dec 2008 – Feb 2011</div>
+                        <span class="timeline-date">Dec 2008 – Feb 2011</span>
                         <h3 class="job-title">Bulletin Producer</h3>
                         <p class="company">Samaya TV</p>
                         <ul>
                             <li>Managed a news bulletin, handling breaking news and live newsroom analysis.</li>
+                            <li>Led copy editors and coordinated with reporters, designers, anchors, and PCR teams for live broadcasts.</li>
                             <li>Oversaw bulletin planning, scripting, and visual layout, maintaining accuracy and timeliness.</li>
                         </ul>
                     </div>
                     
                     <div class="timeline-item">
-                        <div class="timeline-date">Jun 2006 – Sep 2007</div>
+                        <span class="timeline-date">Jun 2006 – Sep 2007</span>
                         <h3 class="job-title">District Correspondent (Kolar)</h3>
                         <p class="company">TV9 Kannada</p>
                         <ul>
-                            <li>Reported impactful stories including the KGF mining controversy, illegal gambling networks, and Beedi dance exposés.</li>
+                            <li>Reported impactful stories, including the KGF illegal mining, illegal gambling networks, and exposing the Beedi dance.</li>
                             <li>Produced special programs, interviews, and political debates during election coverage.</li>
+                            <li>Strengthened ground reporting and storytelling skills through real-time field coverage.</li>
                         </ul>
                     </div>
                     
                     <div class="timeline-item">
-                        <div class="timeline-date">2007 – 2013</div>
+                        <span class="timeline-date">Sep 2009 – Dec 2009</span>
+                        <h3 class="job-title">Senior Translator (Google Wikipedia Project)</h3>
+                        <p class="company">Solutionkraft Technologies</p>
+                        <ul>
+                            <li>Translated large volumes of English Wikipedia articles into Kannada; many remain active today.</li>
+                            <li>Ensured accuracy and cultural authenticity in localization for public knowledge resources.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <span class="timeline-date">Jan 2007 – Jan 2008</span>
+                        <h3 class="job-title">Kannada Language Trainer</h3>
+                        <p class="company">Startek India (formerly Aegis)</p>
+                        <ul>
+                            <li>Designed and delivered Kannada language training for telecom clients (Airtel, Tata Indicom).</li>
+                            <li>Conducted live call audits and feedback to enhance linguistic accuracy and service quality.</li>
+                            <li>Served as a linguistic consultant for Kannada communication and localization requirements.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <span class="timeline-date">2007 – 2013</span>
                         <h3 class="job-title">Part-Time Lecturer (Kannada)</h3>
                         <p class="company">Government First Grade College, Karnataka</p>
                         <ul>
-                            <li>Taught Kannada language and literature to undergraduate students.</li>
+                            <li>Taught Kannada language and literature to undergraduate students on a part-time basis while working with Vijaya Karnataka.</li>
+                            <li>Delivered courses in linguistics, literature, and cultural studies, integrating academic theory with practical insights from media and communication.</li>
                         </ul>
                     </div>
                 </div>
@@ -670,16 +763,18 @@
                     <h3>PhD in Kannada (Cultural Studies)</h3>
                     <p class="institution">Kannada University, Hampi (2012 – 2020)</p>
                     <p class="thesis">Dissertation: “An Examination of Kannada Intellectual Discourses in the Post-Colonial Period.”</p>
+                    <p class="thesis-details">This research critically analyzed the evolution of Kannada intellectual thought in post-independence India, exploring how writers, thinkers, and public debates shaped cultural identity, modernity, and socio-political consciousness in the Kannada public sphere.</p>
                 </div>
                 <div class="education-item">
                     <h3>MPhil in Kannada</h3>
                     <p class="institution">Kannada University, Hampi (2008)</p>
                     <p class="thesis">Dissertation: “A Study of Modernity in the Novels of Poornachandra Tejaswi.”</p>
+                    <p class="thesis-details">The research explored how Tejaswi’s characters and narratives embody the ideas of modernity and social transformation in post-independence Kannada literature.</p>
                 </div>
                 <div class="education-item">
                     <h3>MA in Kannada</h3>
                     <p class="institution">Bangalore University (2003 – 2005)</p>
-                    <p class="thesis">Specialized in Linguistics, Literature, and Folklore.</p>
+                    <p class="thesis-details">Specialized in Linguistics, Literature, and Folklore; project on Kannada literary magazines.</p>
                 </div>
             </div>
         </section>
@@ -695,7 +790,7 @@
                             <li>Google Prompting Essentials – Google (100%)</li>
                             <li>Understanding Agentic AI – The Digital Workforce</li>
                             <li>Linguistic Prompt Design Training – RWS</li>
-                            <li>Amazon Certifications (QA E-learning, Translator Program, Character Encoding)</li>
+                            <li>Amazon Certifications – QA E-learning, Translator Program, Character Encoding</li>
                             <li>State Eligibility Test (KSET) for Lecturer – Mysore University</li>
                             <li>Elements of AI – University of Helsinki (In Progress)</li>
                         </ul>
@@ -716,14 +811,14 @@
         <!-- AI THOUGHT LEADERSHIP & PUBLICATIONS SECTION -->
         <section id="thought-leadership" class="section bg-light">
             <div class="container">
-                <h2>AI Thought Leadership & Publications</h2>
+                <h2>AI Thought Leadership & Recognition</h2>
                 <div class="leadership-content">
                     <ul class="leadership-list">
-                        <li>Weekly AI Columnist for <i>Vijaya Karnataka</i> (since January 2025).</li>
-                        <li>Author of a forthcoming book on AI and its influence on human society.</li>
-                        <li>Published Chapter: My article “AI ಎಂಬ ಮನುಕುಲದ ಮಂತ್ರದಂಡ” was published as a chapter in a BCA textbook by Bangalore University.</li>
-                        <li>Platform Creator: Creator and Managing Editor of <a href="https://www.abhinavaai.tech" target="_blank">www.abhinavaai.tech</a>, a knowledge platform that simplifies AI concepts for Kannada readers.</li>
-                        <li>Guest Lecturer and invited speaker on AI, Cyber Security, and future career pathways.</li>
+                        <li>Weekly AI Columnist for <i>Vijaya Karnataka</i> (since January 2025), writing on the social, cultural, and ethical dimensions of Artificial Intelligence.</li>
+                        <li>Author of a forthcoming book on AI and its influence on human society, exploring how technology shapes culture, communication, and everyday life.</li>
+                        <li>My article on Artificial Intelligence was published as a chapter “AI ಎಂಬ ಮನುಕುಲದ ಮಂತ್ರದಂಡ” in a BCA textbook by Bangalore University, written to help undergraduate students understand the fundamentals of AI.</li>
+                        <li>Creator and Managing Editor of <a href="https://www.abhinavaai.tech" target="_blank">www.abhinavaai.tech</a>, a knowledge platform that simplifies AI concepts for Kannada readers through explainers, tool reviews, and tutorials.</li>
+                        <li>Guest lecturer and invited speaker at universities and colleges, conducting sessions on AI, Cyber Security and future career pathways.</li>
                     </ul>
 
                     <h3>Featured Articles (Weekly Column)</h3>
