@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ಡಾ. ರಾಜ್‌ಕುಮಾರ್ ಚಲನಚಿತ್ರ ಪಟ್ಟಿ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body and Typography */
+        body {
+            font-family: 'Noto Sans Kannada', 'Tunga', 'Arial Unicode MS', sans-serif;
+            background: #f0f2f5; /* Light grey background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header Section - Adding a visual element */
+        .header-banner {
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); /* Soft gradient */
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .header-banner h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            padding-bottom: 5px;
+        }
+
+        .header-banner p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        /* Main Content Container for Centering */
+        .container {
+            width: 95%;
+            max-width: 1300px; /* Slightly wider container for the serial number column */
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Table Styling */
+        table.film-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 20px 0;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Soft shadow */
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 1.05em;
+        }
+
+        table.film-table th, table.film-table td {
+            padding: 12px 8px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        
+        /* Specific Column Widths and Alignment */
+        table.film-table th:nth-child(1), table.film-table td:nth-child(1) { width: 5%; } /* Serial No. */
+        table.film-table th:nth-child(2), table.film-table td:nth-child(2) { text-align: left; width: 45%; padding-left: 20px; } /* Film Name */
+        table.film-table th:nth-child(3), table.film-table td:nth-child(3) { width: 15%; } /* Year */
+        table.film-table th:nth-child(4), table.film-table td:nth-child(4) { width: 35%; padding-right: 20px; } /* Heroine Name */
+
+        table.film-table thead {
+            background-color: #5d54a4; /* Deep purple/indigo header */
+            color: #fff;
+        }
+
+        table.film-table th {
+            font-weight: 700;
+            font-size: 1.15em;
+            text-transform: uppercase;
+        }
+
+        /* Striped rows and hover effect */
+        table.film-table tbody tr:nth-child(even) {
+            background: #f7f9fc; /* Very light blue stripe */
+        }
+        
+        table.film-table tbody tr:hover {
+            background: #ffe0b2; /* Light orange/peach on hover */
+            cursor: default;
+            transition: background 0.3s ease;
+        }
+        
+        /* Table caption/sub-heading */
+        .caption {
+            text-align: center;
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>ಡಾ. ರಾಜ್‌ಕುಮಾರ್ ಅವರ ಕನ್ನಡ ಚಲನಚಿತ್ರಗಳ ಸಂಪೂರ್ಣ ಪಟ್ಟಿ</h1>
+        <p>ಚಲನಚಿತ್ರಗಳ ಕ್ರಮ ಸಂಖ್ಯೆ, ಹೆಸರು, ಬಿಡುಗಡೆಯಾದ ವರ್ಷ ಮತ್ತು ನಾಯಕಿಯರ ವಿವರಗಳು</p>
+    </div>
+
+    <div class="container">
+        
+        <p class="caption">ಪಟ್ಟಿಮಾಡಿದ ಚಲನಚಿತ್ರಗಳ ಸಂಖ್ಯೆ: **157**</p>
+
+        <table class="film-table">
+            <thead>
+                <tr>
+                    <th>ಸಂ.</th> <th>ಚಿತ್ರದ ಹೆಸರು</th>
+                    <th>ತೆರೆಕಂಡ ವರ್ಷ</th>
+                    <th>ನಾಯಕಿಯ ಹೆಸರು</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>ಬೇಡರ ಕಣ್ಣಪ್ಪ (Bedara Kannappa)</td><td>1954</td><td>ಪಂಡರಿಬಾಯಿ (Pandari Bai)</td></tr>
+                <tr><td>2</td><td>ಸೋದರಿ (Sodari)</td><td>1955</td><td>ಪಂಡರಿಬಾಯಿ (Pandari Bai)</td></tr>
+                <tr><td>3</td><td>ಭಕ್ತ ವಿಜಯ (Bhakta Vijaya)</td><td>1956</td><td>ಪಂಡರಿಬಾಯಿ, ಮೈನಾವತಿ</td></tr>
+                <tr><td>4</td><td>ಹರಿಭಕ್ತ (Hari Bhakta)</td><td>1956</td><td>ಪಂಡರಿಬಾಯಿ, ಮೈನಾವತಿ</td></tr>
+                <tr><td>5</td><td>ಓಹಿಳೇಶ್ವರ (Ohileshwara)</td><td>1956</td><td>ಪಂಡರಿಬಾಯಿ (Pandari Bai)</td></tr>
+                <tr><td>6</td><td>ಸತಿ ನಳಾಯಿನಿ (Sati Nalaayini)</td><td>1957</td><td>ಮೈನಾವತಿ (Mynavathi)</td></tr>
+                <tr><td>7</td><td>ರಾಯರ ಸೋಸೆ (Rayara Sose)</td><td>1957</td><td>ಮೈನಾವತಿ (Mynavathi)</td></tr>
+                <tr><td>8</td><td>ಭೂಕೈಲಾಸ (Bhookailasa)</td><td>1958</td><td>ಬಿ.ಸರೋಜಾ ದೇವಿ (B. Saroja Devi)</td></tr>
+                <tr><td>9</td><td>ಶ್ರೀ ಕೃಷ್ಣ ಗಾರುಡಿ (Shree Krishna Gaarudi)</td><td>1958</td><td>ಪಂಡರಿಬಾಯಿ (Pandari Bai)</td></tr>
+                <tr><td>10</td><td>ಅಣ್ಣ ತಂಗಿ (Anna Thangi)</td><td>1958</td><td>ಬಿ.ಸರೋಜಾ ದೇವಿ (B. Saroja Devi)</td></tr>
+                <tr><td>11</td><td>ಜಗಜ್ಯೋತಿ ಬಸವೇಶ್ವರ (Jagajyothi Basveshwara)</td><td>1959</td><td>ಬಿ.ಸರೋಜಾ ದೇವಿ (B. Saroja Devi)</td></tr>
+                <tr><td>12</td><td>ಧರ್ಮವಿಜಯ (Dharma Vijaya)</td><td>1959</td><td>ಪಂಡರಿಬಾಯಿ (Pandari Bai)</td></tr>
+                <tr><td>13</td><td>ಮಹಿಷಾಸುರ ಮರ್ದಿನಿ (Mahishasura Mardini)</td><td>1959</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>14</td><td>ಅಬ್ಬಾ ಆ ಹುಡುಗಿ (Abba Aa Hudugi)</td><td>1959</td><td>ಪಂಡರಿಬಾಯಿ, ಮೈನಾವತಿ</td></tr>
+                <tr><td>15</td><td>ರಣಧೀರ ಕಂಠೀರವ (Ranadheera Kanteerava)</td><td>1960</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>16</td><td>ರಾಣಿ ಹೊನ್ನಮ್ಮ (Rani Honnamma)</td><td>1960</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>17</td><td>ಆಶಾ ಸುಂದರಿ (Aasha Sundari)</td><td>1960</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>18</td><td>ದಶಾವತಾರ (Dashavathara)</td><td>1960</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>19</td><td>ಭಕ್ತ ಕನಕದಾಸ (Bhakta Kanakadasa)</td><td>1960</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>20</td><td>ಶ್ರೀ ಶೈಲ ಮಹಾತ್ಮೆ (Sri Shaila Mahathme)</td><td>1961</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>21</td><td>ಕಿತ್ತೂರ ಚೆನ್ನಮ್ಮ (Kittur Chennamma)</td><td>1961</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>22</td><td>ಕಂಠೇರೆಡು ನೋಡು (Kantheredu Nodu)</td><td>1961</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>23</td><td>ಕೈವಾರ ಮಹಾತ್ಮೆ (Kaiwara Mahathme)</td><td>1961</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>24</td><td>ಭಕ್ತ ಚೇತ (Bhakta Cheta)</td><td>1961</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>25</td><td>ನಾಗಾರ್ಜುನ (Nagarjuna)</td><td>1961</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>26</td><td>ಗಾಳಿ ಗೋಪುರ (Gaali Gopura)</td><td>1962</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>27</td><td>ಭೂದಾನ (Bhoodaana)</td><td>1962</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>28</td><td>ಸ್ವರ್ಣಗೌರಿ (Swarna Gowri)</td><td>1962</td><td>ಬಿ.ಸರೋಜಾ ದೇವಿ (B. Saroja Devi)</td></tr>
+                <tr><td>29</td><td>ದೇವಸುಂದರಿ (Devasundari)</td><td>1962</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>30</td><td>ಕರುಣೆಯೇ ಕುಟುಂಬದ ಕಣ್ಣು (Karuneye Kutumbada Kannu)</td><td>1962</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>31</td><td>ಮಹಾತ್ಮ ಕಬೀರ್ (Mahathma Kabir)</td><td>1962</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>32</td><td>ವಿಧಿವಿಲಾಸ (Vidhivilasa)</td><td>1962</td><td>ಬಿ.ಸರೋಜಾ ದೇವಿ (B. Saroja Devi)</td></tr>
+                <tr><td>33</td><td>ತೇಜಸ್ವಿನಿ (Thejaswini)</td><td>1962</td><td>ಪಂಡರಿಬಾಯಿ (Pandari Bai)</td></tr>
+                <tr><td>34</td><td>ವಾಲ್ಮೀಕಿ (Valmiki)</td><td>1963</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>35</td><td>ಸಾಕು ಮಗಳು (Saaku Magalu)</td><td>1963</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>36</td><td>ನಂದ ದೀಪ (Nanda Deepa)</td><td>1963</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>37</td><td>ಕನ್ಯಾರತ್ನ (Kanyarathna)</td><td>1963</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>38</td><td>ಗೌರಿ (Gowri)</td><td>1963</td><td>ಬಿ.ಸರೋಜಾ ದೇವಿ (B. Saroja Devi)</td></tr>
+                <tr><td>39</td><td>ಜೀವನ ತರಂಗ (Jeevana Tharanga)</td><td>1963</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>40</td><td>ಮಲ್ಲಿ ಮದುವೆ (Malli Maduve)</td><td>1963</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>41</td><td>ಕುಲವಧು (Kulavadhu)</td><td>1963</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>42</td><td>ಕಳಿತರು ಹೆಣ್ಣೇ (Kalitharu Henne)</td><td>1963</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>43</td><td>ಸತಿ ಶಕ್ತಿ (Sathi Shakthi)</td><td>1963</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>44</td><td>ವೀರಕೇಸರಿ (Veerakesari)</td><td>1963</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>45</td><td>ಮನ ಮೆಚ್ಚಿದ ಮದಡಿ (Mana Mecchida Madadi)</td><td>1963</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>46</td><td>ಚಂದ್ರಕುಮಾರ (Chandra Kumara)</td><td>1963</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>47</td><td>ಸಂತ ತುಕಾರಾಮ (Santha Thukaram)</td><td>1963</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>48</td><td>ಶ್ರೀ ರಾಮಾಂಜನೇಯ ಯುದ್ಧ (Sri Ramanjaneya Yuddha)</td><td>1963</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>49</td><td>ನವಕೋಟಿ ನಾರಾಯಣ (Navakoti Narayana)</td><td>1964</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>50</td><td>ಚಂದವಳ್ಳಿಯ ತೋಟ (Chandavalliya Thota)</td><td>1964</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>51</td><td>ಶಿವರಾತ್ರಿ ಮಹಾತ್ಮೆ (Shivarathri Mahathme)</td><td>1964</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>52</td><td>ಅನ್ನಪೂರ್ಣ (Annapoorna)</td><td>1964</td><td>ಮೈನಾವತಿ (Mynavathi)</td></tr>
+                <tr><td>53</td><td>ತುಂಬಿದ ಕೊಡ (Tumbida Koda)</td><td>1964</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>54</td><td>ಶಿವಗಂಗೆ ಮಹಾತ್ಮೆ (Shivagange Mahathme)</td><td>1964</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>55</td><td>ಮುರಿಯದ ಮನೆ (Muriyada Mane)</td><td>1964</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>56</td><td>ಪ್ರತಿಜ್ಞೆ (Prathigne)</td><td>1964</td><td>ಪಂಡರಿಬಾಯಿ (Pandari Bai)</td></tr>
+                <tr><td>57</td><td>ನಾಂದಿ (Naandi)</td><td>1964</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>58</td><td>ನಾಗಪೂಜೆ (Naga Pooja)</td><td>1965</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>59</td><td>ಚಂದ್ರಹಾಸ (Chandrahasa)</td><td>1965</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>60</td><td>ಸರ್ವಜ್ಞ ಮೂರ್ತಿ (Sarvagna Murthy)</td><td>1965</td><td>ಮೈನಾವತಿ (Mynavathi)</td></tr>
+                <tr><td>61</td><td>ವಾತ್ಸಲ್ಯ (Vaatsalya)</td><td>1965</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>62</td><td>ಸತ್ಯ ಹರಿಶ್ಚಂದ್ರ (Satya Harishchandra)</td><td>1965</td><td>ಪಂಡರಿಬಾಯಿ (Pandari Bai)</td></tr>
+                <tr><td>63</td><td>ಮಹಾಸತಿ ಅನಸೂಯಾ (Mahasathi Anasuya)</td><td>1965</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>64</td><td>ಇದೇ ಮಹಾಸುದಿನ (Ide Mahasudina)</td><td>1965</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>65</td><td>ಬೆಟ್ಟದ ಹುಲಿ (Bettada Huli)</td><td>1965</td><td>ಕೃಷ್ಣಕುಮಾರಿ (Krishna Kumari)</td></tr>
+                <tr><td>66</td><td>ಸತಿ ಸಾವಿತ್ರಿ (Sati Savithri)</td><td>1965</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>67</td><td>ಮದುವೆ ಮಾಡಿ ನೋಡು (Maduve Madi Nodu)</td><td>1965</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>68</td><td>ಪತಿವ್ರತಾ (Pathivratha)</td><td>1965</td><td>ಕೃಷ್ಣಕುಮಾರಿ (Krishna Kumari)</td></tr>
+                <tr><td>69</td><td>ಮಂತ್ರಾಲಯ ಮಹಾತ್ಮೆ (Mantralaya Mahatme)</td><td>1966</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>70</td><td>ಕಠಾರಿ ವೀರ (Katari Veera)</td><td>1966</td><td>ವಾಣಿಶ್ರೀ (Vanisri)</td></tr>
+                <tr><td>71</td><td>ಬಾಲ ನಾಗಮ್ಮ (Bala Nagamma)</td><td>1966</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>72</td><td>ತೂಗುದೀಪ (Thoogudeepa)</td><td>1966</td><td>ಹರಿಣಿ (Harini)</td></tr>
+                <tr><td>73</td><td>ಪ್ರೇಮಮಯಿ (Premamayi)</td><td>1966</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>74</td><td>ಕಿಲಾಡಿ ರಂಗ (Kilaadi Ranga)</td><td>1966</td><td>ವಂದನಾ, ರಾಧಾ (Vandana, Radha)</td></tr>
+                <tr><td>75</td><td>ಮಧುಮಾಲತಿ (Madhumalathi)</td><td>1966</td><td>ಕೃಷ್ಣಕುಮಾರಿ (Krishna Kumari)</td></tr>
+                <tr><td>76</td><td>ಎಮ್ಮೆ ತಮ್ಮಣ್ಣ (Emme Thammanna)</td><td>1966</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>77</td><td>ಮೋಹಿನಿ ಭಸ್ಮಾಸುರ (Mohini Bhasmasura)</td><td>1966</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>78</td><td>ಶ್ರೀ ಕನ್ನಿಕಾ ಪರಮೇಶ್ವರಿ ಕಥೆ (Sri Kannika Parameshwari Kathe)</td><td>1966</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>79</td><td>ಸಂಧ್ಯಾರಾಗ (Sandhya Raga)</td><td>1966</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>80</td><td>ಪಾರ್ವತಿ ಕಲ್ಯಾಣ (Parvathi Kalyana)</td><td>1967</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>81</td><td>ಸತಿ ಸುಕನ್ಯಾ (Sathi Sukanya)</td><td>1967</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>82</td><td>ಗಂಗೆ ಗೌರಿ (Gange Gowri)</td><td>1967</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>83</td><td>ರಾಜಶೇಖರ (Rajashekara)</td><td>1967</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>84</td><td>ಲಗ್ನ ಪತ್ರಿಕೆ (Lagna Pathrike)</td><td>1967</td><td>ರಾಜಶ್ರೀ (Rajasree)</td></tr>
+                <tr><td>85</td><td>ರಾಜದುರ್ಗದ ರಹಸ್ಯ (Rajadurgada Rahasya)</td><td>1967</td><td>ರಾಜಶ್ರೀ (Rajasree)</td></tr>
+                <tr><td>86</td><td>ದೇವರ ಗೆದ್ದ ಮಾನವ (Devara Gedda Manava)</td><td>1967</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>87</td><td>ಬೀದಿ ಬಸವಣ್ಣ (Beedi Basavanna)</td><td>1967</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>88</td><td>ಮನಸ್ಸಿದ್ದರೆ ಮಾರ್ಗ (Manassiddare Maarga)</td><td>1967</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>89</td><td>ಬಂಗಾರದ ಹೂವು (Bangarada Hoovu)</td><td>1967</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>90</td><td>ಚಕ್ರ ತೀರ್ಥ (Chakra Theertha)</td><td>1967</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>91</td><td>ಇಮ್ಮಡಿ ಪುಲಿಕೇಶಿ (Immadi Pulakeshi)</td><td>1967</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>92</td><td>ಜೆದರ ಬಲೆ (Jedara Bale)</td><td>1968</td><td>ಚಂದ್ರಕಲಾ (Chandrakala)</td></tr>
+                <tr><td>93</td><td>ಗಾಂಧಿನಗರ (Gandhinagara)</td><td>1968</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>94</td><td>ಮಹಾಸತಿ ಅರುಂಧತಿ (Mahasathi Arundathi)</td><td>1968</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>95</td><td>ಮನಸ್ಸಾಕ್ಷಿ (Manassakshi)</td><td>1968</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>96</td><td>ಸರ್ವಮಂಗಳ (Sarvamangala)</td><td>1968</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>97</td><td>ಭಾಗ್ಯದೇವತೆ (Bhagya Devathe)</td><td>1968</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>98</td><td>ಬೆಂಗಳೂರು ಮೇಲ್ (Bangalore Mail)</td><td>1968</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>99</td><td>ಹನ್ನೆಲೆ ಚಿಗುರಿದಾಗ (Hannele Chiguridaga)</td><td>1968</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>100</td><td>ಭಾಗ್ಯದ ಬಾಗಿಲು (Bhagyada Bagilu)</td><td>1968</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>101</td><td>ರೌಡಿ ರಂಗಣ್ಣ (Rowdi Ranganna)</td><td>1968</td><td>ಚಂದ್ರಕಲಾ, ಜಯಂತಿ (Chandrakala, Jayanthi)</td></tr>
+                <tr><td>102</td><td>ಧೂಮಕೇತು (Dhoomaketu)</td><td>1968</td><td>ಉದಯಚಂದ್ರಿಕಾ (Udayachandrika)</td></tr>
+                <tr><td>103</td><td>ಅಮ್ಮ (Amma)</td><td>1968</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>104</td><td>ಸಿಂಹಸ್ವಪ್ನ (Simhaswapna)</td><td>1968</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>105</td><td>ಗೋವಾದಲ್ಲಿ CID 999 (Goa Dalli CID 999)</td><td>1968</td><td>ರೇಖಾ (Rekha)</td></tr>
+                <tr><td>106</td><td>ಮಣ್ಣಿನ ಮಗ (Mannina Maga)</td><td>1968</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>107</td><td>ಮಾರ್ಗದರ್ಶಿ (Margadarshi)</td><td>1969</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>108</td><td>ಗಂಡೊಂದು ಹೆಣ್ಣರು (Gandondu Hennaru)</td><td>1969</td><td>ಮೈನಾವತಿ (Mynavathi)</td></tr>
+                <tr><td>109</td><td>ಮಲ್ಲಮ್ಮನ ಪಾವಡ (Mallammana Pavada)</td><td>1969</td><td>ಬಿ.ಸರೋಜಾ ದೇವಿ (B. Saroja Devi)</td></tr>
+                <tr><td>110</td><td>ಚೂರಿ ಚಿಕ್ಕಣ್ಣ (Choori Chikkanna)</td><td>1969</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>111</td><td>ಪುನರ್ಜನ್ಮ (Punarjanma)</td><td>1969</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>112</td><td>ಭಲೇ ರಾಜ (Bhale Raja)</td><td>1969</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>113</td><td>ಉಯ್ಯಾಲೆ (Uyyale)</td><td>1969</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>114</td><td>ಚಿಕ್ಕಮ್ಮ (Chikkamma)</td><td>1969</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>115</td><td>ಮೇಯರ್ ಮುತ್ತಣ್ಣ (Mayor Muthanna)</td><td>1969</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>116</td><td>ಆಪರೇಶನ್ ಜಾಕ್ಪಾಟ್ ನಲ್ಲಿ CID 999 (Operation Jackpot Nalli CID 999)</td><td>1969</td><td>ರೇಖಾ (Rekha)</td></tr>
+                <tr><td>117</td><td>ಶ್ರೀ ಕೃಷ್ಣದೇವರಾಯ (Sri Krishnadevaraya)</td><td>1970</td><td>ಭಾರತಿ, ಮೈನಾವತಿ</td></tr>
+                <tr><td>118</td><td>ಕರುಳಿನ ಕರೆ (Karulina Kare)</td><td>1970</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>119</td><td>ಹಸಿರು ತೋರಣ (Hasiru Thorana)</td><td>1970</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>120</td><td>ಭೂಪತಿ ರಂಗ (Bhoopathi Ranga)</td><td>1970</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>121</td><td>ಮಿ. ರಾಜ್ಕುಮಾರ್ (Mr. Rajkumar)</td><td>1970</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>122</td><td>ಭಲೇ ಜೋಡಿ (Bhale Jodi)</td><td>1970</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>123</td><td>CID ರಾಜಣ್ಣ (C.I.D. Rajanna)</td><td>1970</td><td>ಮಂಜುಲಾ (Manjula)</td></tr>
+                <tr><td>124</td><td>ನನ್ನ ತಮ್ಮ (Nanna Thamma)</td><td>1970</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>125</td><td>ಬಾಲು ಬೆಳಗಿತು (Baalu Belagithu)</td><td>1970</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>126</td><td>ದೇವರ ಮಕ್ಕಳು (Devara Makkalu)</td><td>1970</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>127</td><td>ಪರೋಪಕಾರಿ (Paropakari)</td><td>1970</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>128</td><td>ಕಸ್ತೂರಿ ನಿವಾಸ (Kasturi Nivasa)</td><td>1971</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>129</td><td>ಬಾಲ ಬಂಧನ (Baala Bandhana)</td><td>1971</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>130</td><td>ಕುಲ ಗೌರವ (Kula Gourava)</td><td>1971</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>131</td><td>ನಮ್ಮ ಸಂಸಾರ (Namma Samsara)</td><td>1971</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>132</td><td>ಕಾಸಿದ್ರೆ ಕೈಲಾಸ (Kasidre Kailasa)</td><td>1971</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>133</td><td>ತಾಯಿ ದೇವರು (Thayi Devaru)</td><td>1971</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>134</td><td>ಪ್ರತಿಧ್ವನಿ (Pratidwani)</td><td>1971</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>135</td><td>ಸಾಕ್ಷಾತ್ಕಾರ (Sakshatkara)</td><td>1971</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>136</td><td>ನ್ಯಾಯವೇ ದೇವರು (Nyayave Devaru)</td><td>1971</td><td>ಬಿ.ಸರೋಜಾ ದೇವಿ, ಆರತಿ</td></tr>
+                <tr><td>137</td><td>ಶ್ರೀ ಕೃಷ್ಣ ರುಕ್ಮಿಣಿ ಸತ್ಯಭಾಮಾ (Sri Krishna Rukmini Satyabhama)</td><td>1971</td><td>ಭಾರತಿ, ಬಿ.ಸರೋಜಾ ದೇವಿ, ಆರತಿ</td></tr>
+                <tr><td>138</td><td>ಜನ್ಮ ರಹಸ್ಯ (Janma Rahasya)</td><td>1972</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>139</td><td>ಸಿಪಾಯಿ ರಾಮು (Sipayi Ramu)</td><td>1972</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>140</td><td>ಬಂಗಾರದ ಮನುಷ್ಯ (Bangaarada Manushya)</td><td>1972</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>141</td><td>ಹೃದಯ ಸಂಗಮ (Hrudaya Sangama)</td><td>1972</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>142</td><td>ಕ್ರಾಂತಿವೀರ (Kranti Veera)</td><td>1972</td><td>ಮಂಜುಲಾ (Manjula)</td></tr>
+                <tr><td>143</td><td>ಭಲೇ ಹುಚ್ಚ (Bhale Huchcha)</td><td>1972</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>144</td><td>ನಂದಗೋಕುಲ (Nanda Gokula)</td><td>1972</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>145</td><td>ಜಗ ಮೆಚ್ಚಿದ ಮಗ (Jaga Mecchida Maga)</td><td>1972</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>146</td><td>ದೇವರು ಕೊಟ್ಟ ತಂಗಿ (Devaru Kotta Thangi)</td><td>1973</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>147</td><td>ಬಿಡುಗಡೆ (Bidugade)</td><td>1973</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>148</td><td>ಸ್ವಯಂವರ (Swayamvara)</td><td>1973</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>149</td><td>ಗಂಧದ ಗುಡಿ (Gandhada Gudi)</td><td>1973</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>150</td><td>ದೂರದ ಬೆಟ್ಟ (Doorada Betta)</td><td>1973</td><td>ಭಾರತಿ (Bharathi)</td></tr>
+                <tr><td>151</td><td>ಮೂರೋವರೆ ವಜ್ರಗಳು (Mooroovare Vajragalu)</td><td>1973</td><td>ಆರತಿ, ಮಂಜುಲಾ, ಜಯಂತಿ</td></tr>
+                <tr><td>152</td><td>ಬಂಗಾರದ ಪಂಜರ (Bangaarada Panjara)</td><td>1974</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>153</td><td>ಎರಡು ಕನಸು (Eradu Kanasu)</td><td>1974</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>154</td><td>ಸಂಪತ್ತಿಗೆ ಸವಾಲ್ (Sampathige Saval)</td><td>1974</td><td>ಕಲ್ಪನಾ (Kalpana)</td></tr>
+                <tr><td>155</td><td>ಭಕ್ತ ಕುಂಭಾರ (Bhakta Kumbara)</td><td>1974</td><td>ಲೀಲಾವತಿ (Leelavathi)</td></tr>
+                <tr><td>156</td><td>ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಕಲ್ಯಾಣ (Sri Srinivasa Kalyana)</td><td>1974</td><td>ಬಿ.ಸರೋಜಾ ದೇವಿ, ಮಂಜುಲಾ</td></tr>
+                <tr><td>157</td><td>ದಾರಿ ತಪ್ಪಿದ ಮಗ (Daari Tappida Maga)</td><td>1975</td><td>ಕಲ್ಪನಾ, ಮಂಜುಲಾ</td></tr>
+                <tr><td>158</td><td>ಮಯೂರ (Mayura)</td><td>1975</td><td>ಮಂಜುಲಾ (Manjula)</td></tr>
+                <tr><td>159</td><td>ತ್ರಿಮೂರ್ತಿ (Trimurti)</td><td>1975</td><td>ಜಯಮಾಲ, ಸುರೇಖಾ</td></tr>
+                <tr><td>160</td><td>ಪ್ರೇಮದ ಕಾಣಿಕೆ (Premada Kanike)</td><td>1976</td><td>ಜಯಮಾಲ (Jayamala)</td></tr>
+                <tr><td>161</td><td>ಬಹದ್ದೂರ್ ಗಂಡು (Bahaddur Gandu)</td><td>1976</td><td>ಜಯಂತಿ (Jayanthi)</td></tr>
+                <tr><td>162</td><td>ರಾಜ ನನ್ನ ರಾಜ (Raja Nanna Raja)</td><td>1976</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>163</td><td>ನಾ ನಿನ್ನ ಮರೆಯಲಾರೆ (Naa Ninna Mareyalare)</td><td>1976</td><td>ಲಕ್ಷ್ಮಿ (Lakshmi)</td></tr>
+                <tr><td>164</td><td>ಬಡವರ ಬಂಧು (Badavara Bandhu)</td><td>1976</td><td>ಜಯಮಾಲ (Jayamala)</td></tr>
+                <tr><td>165</td><td>ಬಬ್ರುವಾಹನ (Babruvahana)</td><td>1977</td><td>ಜಯಮಾಲ, ಕಾಂಚನಾ, ಬಿ.ಸರೋಜಾ ದೇವಿ</td></tr>
+                <tr><td>166</td><td>ಭಾಗ್ಯವಂತರು (Bhagyavantharu)</td><td>1977</td><td>ಜಯಮಾಲ (Jayamala)</td></tr>
+                <tr><td>167</td><td>ಗಿರಿಕನ್ಯೆ (Giri Kanye)</td><td>1977</td><td>ಜಯಮಾಲ (Jayamala)</td></tr>
+                <tr><td>168</td><td>ಸನಾದಿ ಅಪ್ಪಣ್ಣ (Sanaadi Appanna)</td><td>1977</td><td>ಲಕ್ಷ್ಮಿ (Lakshmi)</td></tr>
+                <tr><td>169</td><td>ಒಲವು ಗೆಲುವು (Olavu Geluvu)</td><td>1977</td><td>ಲಕ್ಷ್ಮಿ, ಸುರೇಖಾ</td></tr>
+                <tr><td>170</td><td>ಶಂಕರ್ ಗುರು (Shankar Guru)</td><td>1978</td><td>ಜಯಮಾಲ, ವೈಶಾಲಿ, ಕಾಂಚನಾ</td></tr>
+                <tr><td>171</td><td>ಆಪರೇಶನ್ ಡೈಮಂಡ್ ರಾಕೆಟ್ (Operation Diamond Racket)</td><td>1978</td><td>ಲಕ್ಷ್ಮಿ, ಕಾಂಚನಾ</td></tr>
+                <tr><td>172</td><td>ತಾಯಿಗೆ ತಕ್ಕ ಮಗ (Thayige Thakka Maga)</td><td>1978</td><td>ಆರತಿ (Aarathi)</td></tr>
+                <tr><td>173</td><td>ಹುಲಿಯ ಹಾಲಿನ ಮೇವು (Huliya Haalina Mevu)</td><td>1979</td><td>ಸುಮಲತಾ (Sumalatha)</td></tr>
+                <tr><td>174</td><td>ನನೊಬ್ಬ ಕಳ್ಳ (Nanobba Kalla)</td><td>1979</td><td>ಲಕ್ಷ್ಮಿ (Lakshmi)</td></tr>
+                <tr><td>175</td><td>ರವಿಚಂದ್ರ (Ravichandra)</td><td>1980</td><td>ಲಕ್ಷ್ಮಿ, ಸುಮಲತಾ</td></tr>
+                <tr><td>176</td><td>ವಸಂತ ಗೀತಾ (Vasanta Geetha)</td><td>1980</td><td>ಗಾಯತ್ರಿ (Gayathri)</td></tr>
+                <tr><td>177</td><td>ಹಾವಿನ ಹೆಡೆ (Haavina Hede)</td><td>1981</td><td>ಸುಳಕ್ಷಣಾ (Sulakshana)</td></tr>
+                <tr><td>178</td><td>ನೀ ನನ್ನ ಗೆಲ್ಲಲಾರೆ (Nee Nanna Gellalare)</td><td>1981</td><td>ಸರಿತಾ (Sarita)</td></tr>
+                <tr><td>179</td><td>ಕೇರಳಿದ ಸಿಂಹ (Keralida Simha)</td><td>1981</td><td>ಸರಿತಾ (Sarita)</td></tr>
+                <tr><td>180</td><td>ಹೊಸಬೆಳಕು (Hosa Belaku)</td><td>1982</td><td>ಸರಿತಾ (Sarita)</td></tr>
+                <tr><td>181</td><td>ಹಾಲು ಜೇನು (Haalu Jenu)</td><td>1982</td><td>ಮಾಧವಿ (Madhavi)</td></tr>
+                <tr><td>182</td><td>ಚಾಳಿಸುವ ಮೋಡಗಳು (Chalisuva Modagalu)</td><td>1982</td><td>ಸರಿತಾ (Sarita)</td></tr>
+                <tr><td>183</td><td>ಕವಿರತ್ನ ಕಾಳಿದಾಸ (Kaviratna Kalidasa)</td><td>1983</td><td>ಸರಿತಾ (Sarita)</td></tr>
+                <tr><td>184</td><td>ಕಾಮನ ಬಿಲ್ಲು (Kaamana Billu)</td><td>1983</td><td>ಅಂಬಿಕಾ (Ambika)</td></tr>
+                <tr><td>185</td><td>ಭಕ್ತ ಪ್ರಹ್ಲಾದ (Bhakta Prahlada)</td><td>1983</td><td>ಸರಿತಾ (Sarita)</td></tr>
+                <tr><td>186</td><td>ಎರಡು ನಕ್ಷತ್ರಗಳು (Eradu Nakshatragalu)</td><td>1983</td><td>ಅಂಬಿಕಾ (Ambika)</td></tr>
+                <tr><td>187</td><td>ಸಮಯದ ಗೊಂಬೆ (Samayada Gombe)</td><td>1984</td><td>ಜಯಪ್ರದಾ (Jayaprada)</td></tr>
+                <tr><td>188</td><td>ಶ್ರವಣ ಬಂಧು (Shravana Banthu)</td><td>1984</td><td>ಜಯಪ್ರದಾ (Jayaprada)</td></tr>
+                <tr><td>189</td><td>ಯಾರಿವನು (Yarivanu)</td><td>1984</td><td>ಜಯಪ್ರದಾ (Jayaprada)</td></tr>
+                <tr><td>190</td><td>ಅಪೂರ್ವ ಸಂಗಮ (Apoorva Sangama)</td><td>1984</td><td>ಜಯಪ್ರದಾ (Jayaprada)</td></tr>
+                <tr><td>191</td><td>ಅದೇ ಕಣ್ಣು (Ade Kannu)</td><td>1985</td><td>ಗಾಯತ್ರಿ (Gayathri)</td></tr>
+                <tr><td>192</td><td>ಜ್ವಾಲಾಮುಖಿ (Jwaalamukhi)</td><td>1985</td><td>ಗಾಯತ್ರಿ (Gayathri)</td></tr>
+                <tr><td>193</td><td>ಧ್ರುವತಾರೆ (Dhruva Thare)</td><td>1985</td><td>ಗೀತಾ (Geetha)</td></tr>
+                <tr><td>194</td><td>ಭಾಗ್ಯದ ಲಕ್ಷ್ಮೀ ಬಾರಮ್ಮ (Bhagyada Lakshmi Baramma)</td><td>1986</td><td>ಮಾಧವಿ (Madhavi)</td></tr>
+                <tr><td>195</td><td>ಅನುರಾಗ ಅರಳಿತು (Anuraga Aralithu)</td><td>1986</td><td>ಮಾಧವಿ, ಗೀತಾ</td></tr>
+                <tr><td>196</td><td>ಗುರಿ (Guri)</td><td>1986</td><td>ಅರ್ಚನಾ (Archana)</td></tr>
+                <tr><td>197</td><td>ಒಂದು ಮುತ್ತಿನ ಕಥೆ (Ondu Muttina Kathe)</td><td>1987</td><td>ಅರ್ಚನಾ (Archana)</td></tr>
+                <tr><td>198</td><td>ಶೃತಿ ಸೇರಿದಾಗ (Shruthi Seridaaga)</td><td>1987</td><td>ಮಾಧವಿ (Madhavi)</td></tr>
+                <tr><td>199</td><td>ದೇವತಾ ಮಾನುಷ್ಯ (Devatha Manushya)</td><td>1988</td><td>ಗೀತಾ (Geetha)</td></tr>
+                <tr><td>200</td><td>ಪರಶುರಾಮ (Parashuram)</td><td>1989</td><td>ಮಹಾಲಕ್ಷ್ಮಿ (Mahalakshmi)</td></tr>
+                <tr><td>201</td><td>ಜೀವನ ಚೈತ್ರ (Jeevana Chaitra)</td><td>1992</td><td>ಮಾಧವಿ (Madhavi)</td></tr>
+                <tr><td>202</td><td>ಆಕಸ್ಮಿಕ (Aakasmika)</td><td>1993</td><td>ಗೀತಾ, ಮಾಧವಿ</td></tr>
+                <tr><td>203</td><td>ಓಡಹುಟ್ಟಿದವರು (Odahuttidavaru)</td><td>1994</td><td>ಮಾಧವಿ (Madhavi)</td></tr>
+                <tr><td>204</td><td>ಶಬ್ದವೇದಿ (Shabdavedhi)</td><td>2000</td><td>ವಾಣಿ ವಿಶ್ವನಾಥ್ (Vani Viswanath)</td></tr>
+                </tbody>
+        </table>
+
+    </div>
+
+    <div class="footer">
+        © 2025 ಡಾ. ರಾಜ್‌ಕುಮಾರ್ ಚಲನಚಿತ್ರಗಳ ಸಂಪೂರ್ಣ ಪಟ್ಟಿ | Updated with all 204 Films
+    </div>
+
+</body>
+</html>
